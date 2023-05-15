@@ -1,0 +1,26 @@
+--create a fitness equipment store database.
+
+CREATE TABLE fitness (id INTEGER PRIMARY KEY, name TEXT, color TEXT, weight INTEGER, price INTEGER);
+
+INSERT INTO fitness VALUES (1, 'ball', 'black', 10, 100),
+INSERT INTO fitness VALUES (2, 'ball', 'black', 14, 111),
+INSERT INTO fitness VALUES (3, 'ball', 'black', 20, 130),
+INSERT INTO fitness VALUES (4, 'ball', 'black', 25, 155),
+INSERT INTO fitness VALUES (5, 'ball', 'black', 30, 170),
+INSERT INTO fitness VALUES (6, 'plate', 'grey', 5, 55),
+INSERT INTO fitness VALUES (7, 'plate', 'grey', 10, 95),
+INSERT INTO fitness VALUES (8, 'plate', 'grey', 15, 55),
+INSERT INTO fitness VALUES (9, 'plate', 'green', 25, 90),
+INSERT INTO fitness VALUES (10, 'plate', 'red', 35, 125),
+INSERT INTO fitness VALUES (11, 'plate', 'blue', 45, 160),
+INSERT INTO fitness VALUES (12, 'bar', 'pink', 35, 295),
+INSERT INTO fitness VALUES (13, 'bar', 'blue', 35, 295),
+INSERT INTO fitness VALUES (14, 'bar', 'tan', 45, 350),
+INSERT INTO fitness VALUES (15, 'bar', 'red', 45, 350)
+;
+
+--display the database store by price.
+SELECT * FROM fitness ORDER BY price asc;
+
+--what is the most expensive product with name a color?
+SELECT MAX(price), name, color FROM fitness;
