@@ -1,6 +1,7 @@
 --I worked with a dataset called chinook, which represents a digital media store and included tables for artists, albums, media tracks, invoices and customers.
 --From there I answered some questions and created SQL's that could help me find things like certain songs from artists and albums.
 
+
 --Show customers (ID, full name, country) in USA.
 SELECT CustomerId, FirstName, LastName, Country
 FROM chinook.customers
